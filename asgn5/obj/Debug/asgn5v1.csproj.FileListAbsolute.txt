@@ -16,3 +16,5 @@ J:\COMP\4560\Assignments\Assignment5\asgn5\obj\Debug\asgn5v1.Transformer.resourc
 J:\COMP\4560\Assignments\Assignment5\asgn5\obj\Debug\asgn5v1.csproj.GenerateResource.Cache
 C:\Users\a00848501\Desktop\asgn5\obj\Debug\asgn5v1.exe
 C:\Users\a00848501\Desktop\asgn5\obj\Debug\asgn5v1.pdb
+C:\Users\a00848501\Desktop\asn5\asgn5\obj\Debug\asgn5v1.exe
+C:\Users\a00848501\Desktop\asn5\asgn5\obj\Debug\asgn5v1.pdb

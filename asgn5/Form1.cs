@@ -63,7 +63,7 @@ namespace asgn5v1
 			this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
 			this.SetStyle(ControlStyles.UserPaint, true);
 			this.SetStyle(ControlStyles.DoubleBuffer, true);
-			Text = "COMP 4560:  Assignment 5 (200830) (Your Name Here)";
+			Text = "COMP 4560:  Assignment 5 (200830) (Ignacio Marquez)";
 			ResizeRedraw = true;
 			BackColor = Color.Black;
 			MenuItem miNewDat = new MenuItem("New &Data...",
@@ -331,13 +331,13 @@ namespace asgn5v1
 		protected override void OnPaint(PaintEventArgs pea)
 		{
 			Graphics grfx = pea.Graphics;
-         Pen pen = new Pen(Color.White, 3);
+            Pen pen = new Pen(Color.White, 3);
 			double temp;
 			int k;
 
             if (gooddata)
             {
-                //create the screen coordinates:
+                // create the screen coordinates:
                 // scrnpts = vertices*ctrans
 
                 for (int i = 0; i < numpts; i++)
@@ -351,7 +351,7 @@ namespace asgn5v1
                     }
                 }
 
-                //now draw the lines
+                // now draw the lines
 
                 for (int i = 0; i < numlines; i++)
                 {
@@ -365,7 +365,7 @@ namespace asgn5v1
 
 		void MenuNewDataOnClick(object obj, EventArgs ea)
 		{
-			//MessageBox.Show("New Data item clicked.");
+			// MessageBox.Show("New Data item clicked.");
 			gooddata = GetNewData();
 			RestoreInitialImage();			
 		}
@@ -432,13 +432,13 @@ namespace asgn5v1
 				return false;
 			}
 			scrnpts = new double[numpts,4];
-			setIdentity(ctrans,4,4);  //initialize transformation matrix to identity
+			setIdentity(ctrans,4,4);  // initialize transformation matrix to identity
 			return true;
 		} // end of GetNewData
 
 		void DecodeCoords(ArrayList coorddata)
 		{
-			//this may allocate slightly more rows that necessary
+			// this may allocate slightly more rows that necessary
 			vertices = new double[coorddata.Count,4];
 			numpts = 0;
 			string [] text = null;
@@ -457,7 +457,7 @@ namespace asgn5v1
 
 		void DecodeLines(ArrayList linesdata)
 		{
-			//this may allocate slightly more rows that necessary
+			// this may allocate slightly more rows that necessary
 			lines = new int[linesdata.Count,2];
 			numlines = 0;
 			string [] text = null;
@@ -492,10 +492,12 @@ namespace asgn5v1
 			{
 				Refresh();
 			}
+
 			if (e.Button == transrightbtn) 
 			{
 				Refresh();
 			}
+
 			if (e.Button == transupbtn)
 			{
 				Refresh();
@@ -505,22 +507,27 @@ namespace asgn5v1
 			{
 				Refresh();
 			}
+
 			if (e.Button == scaleupbtn) 
 			{
 				Refresh();
 			}
+
 			if (e.Button == scaledownbtn) 
 			{
 				Refresh();
 			}
+
 			if (e.Button == rotxby1btn) 
 			{
 				
 			}
+
 			if (e.Button == rotyby1btn) 
 			{
 				
 			}
+
 			if (e.Button == rotzby1btn) 
 			{
 				
@@ -530,6 +537,7 @@ namespace asgn5v1
 			{
 				
 			}
+
 			if (e.Button == rotybtn) 
 			{
 				
